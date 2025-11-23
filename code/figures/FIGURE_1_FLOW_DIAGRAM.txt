@@ -1,0 +1,48 @@
+
+FLOW DIAGRAM: Data Sources and Selection
+==========================================
+
+┌─────────────────────────────────────────┐
+│  SYSTEMATIC SEARCH FOR                  │
+│  META-EPIDEMIOLOGICAL DATA              │
+└──────────────┬──────────────────────────┘
+               │
+               ├──────────────────────────────┐
+               │                              │
+    ┌──────────▼─────────┐       ┌───────────▼──────────┐
+    │  IMPACT-HTA        │       │  BMC Medicine 2022   │
+    │  Database          │       │  Meta-Epidemio Study │
+    │                    │       │                      │
+    │  N = 8             │       │  N = 49              │
+    └──────────┬─────────┘       └───────────┬──────────┘
+               │                              │
+               └──────────┬───────────────────┘
+                          │
+               ┌──────────▼──────────┐
+               │  COMBINED DATASET   │
+               │  N = 57             │
+               │                     │
+               │  Real comparisons   │
+               │  (No simulation)    │
+               └──────────┬──────────┘
+                          │
+          ┌───────────────┼───────────────┐
+          │               │               │
+   ┌──────▼─────┐  ┌─────▼──────┐  ┌─────▼──────┐
+   │ Standard   │  │ Bias-      │  │ Bayesian   │
+   │ Meta-      │  │ Correction │  │ MCMC       │
+   │ Analysis   │  │ Methods    │  │ Analysis   │
+   │            │  │ (6)        │  │            │
+   └────────────┘  └────────────┘  └────────────┘
+
+EXCLUSIONS:
+• Anglemyer 2014 (N=1,583): Data not publicly available
+• BMC 2024 (N=220): Individual comparison data not extractable
+• Simulated comparisons (N=250): Excluded from primary analysis
+
+FINAL DATASET:
+• N = 57 real comparisons
+• 8 from IMPACT-HTA
+• 49 from BMC Medicine 2022
+• 100% empirical data
+

@@ -1,0 +1,39 @@
+# R files
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+
+# R temporary files
+*~
+*.swp
+*.swo
+
+# Data files (large)
+*.rds
+*.RDS
+
+# Exceptions - keep essential results
+!results/*.rds
+!data/processed/*.rds
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Output files
+*.pdf
+*.html
+
+# Exceptions - keep publication figures
+!code/figures/*.png
+!code/figures/*.txt

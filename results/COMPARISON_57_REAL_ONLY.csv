@@ -1,0 +1,7 @@
+"Method","RoR","CI_lower","CI_upper","P_value"
+"Standard RE",1.02,0.913,1.14,0.7256
+"Hartung-Knapp",1.02,0.905,1.15,0.7415
+"PET-adjusted",0.867,NA,NA,0
+"PEESE-adjusted",0.906,NA,NA,0
+"Limit meta-analysis",0.867,0.788,0.953,0.0039
+"Bayesian",0.926,0.9,0.952,NA

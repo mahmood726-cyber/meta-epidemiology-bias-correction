@@ -7,7 +7,7 @@
   "type": "meta-epidemiology",
   "primary_estimand": "Ratio of ratios",
   "summary": "Seven bias-correction methods reveal 9-13% underestimation by observational studies masked by standard meta-analysis.",
-  "body": "Do standard random-effects meta-analyses mask systematic publication bias in meta-epidemiological comparisons of randomized and observational studies? We assembled 57 ratio-of-ratios comparisons from the IMPACT-HTA database and a BMC Medicine 2022 review, then applied seven methods including REML, Hartung-Knapp, PET-PEESE, trim-and-fill, limit meta-analysis, selection models, and Bayesian MCMC. The standard estimate showed no significant bias, but after correction all convergent methods indicated 9 to 13 percent underestimation by observational studies. The median corrected RR was 0.887, 95% CI 0.764-0.989, with extreme heterogeneity at I-squared 91.2 percent driven entirely by 35 percent discordant comparisons. Selection models failed for all three specifications due to insufficient sample size and sparse p-value intervals in the dataset. Stratification by a novel discordance index revealed that 64.9 percent of comparisons show agreement at a threshold below two. However, a limitation is that the 57-comparison sample restricts statistical power for subgroup-specific bias correction estimates.",
+  "body": "Do standard random-effects meta-analyses mask systematic publication bias in meta-epidemiological comparisons of randomized and observational studies? We assembled 57 ratio-of-ratios comparisons from the IMPACT-HTA database and a BMC Medicine 2022 review covering cardiovascular, oncology, and infectious disease domains. Seven correction methods including REML, Hartung-Knapp, PET-PEESE, trim-and-fill, limit meta-analysis, selection models, and Bayesian MCMC were applied to each comparison against the standard uncorrected estimate. The standard estimate showed no significant bias, but after correction all convergent methods indicated 9 to 13 percent underestimation by observational studies, with median corrected RR 0.887 (95% CI 0.764 to 0.989). Selection models failed for all three specifications due to insufficient sample size, while extreme heterogeneity at I-squared 91.2 percent was driven by 35 percent discordant comparisons. Stratification by a novel discordance index revealed that 64.9 percent of comparisons show agreement below the two-fold divergence threshold. However, a limitation is that the 57-comparison sample restricts statistical power for subgroup-specific bias correction estimates.",
   "sentences": [
     {
       "role": "Question",
@@ -15,23 +15,23 @@
     },
     {
       "role": "Dataset",
-      "text": "We assembled 57 ratio-of-ratios comparisons from the IMPACT-HTA database and a BMC Medicine 2022 review, then applied seven methods including REML, Hartung-Knapp, PET-PEESE, trim-and-fill, limit meta-analysis, selection models, and Bayesian MCMC."
+      "text": "We assembled 57 ratio-of-ratios comparisons from the IMPACT-HTA database and a BMC Medicine 2022 review covering cardiovascular, oncology, and infectious disease domains."
     },
     {
       "role": "Method",
-      "text": "The standard estimate showed no significant bias, but after correction all convergent methods indicated 9 to 13 percent underestimation by observational studies."
+      "text": "Seven correction methods including REML, Hartung-Knapp, PET-PEESE, trim-and-fill, limit meta-analysis, selection models, and Bayesian MCMC were applied to each comparison against the standard uncorrected estimate."
     },
     {
       "role": "Primary result",
-      "text": "The median corrected RR was 0.887, 95% CI 0.764-0.989, with extreme heterogeneity at I-squared 91.2 percent driven entirely by 35 percent discordant comparisons."
+      "text": "The standard estimate showed no significant bias, but after correction all convergent methods indicated 9 to 13 percent underestimation by observational studies, with median corrected RR 0.887 (95% CI 0.764 to 0.989)."
     },
     {
       "role": "Robustness",
-      "text": "Selection models failed for all three specifications due to insufficient sample size and sparse p-value intervals in the dataset."
+      "text": "Selection models failed for all three specifications due to insufficient sample size, while extreme heterogeneity at I-squared 91.2 percent was driven by 35 percent discordant comparisons."
     },
     {
       "role": "Interpretation",
-      "text": "Stratification by a novel discordance index revealed that 64.9 percent of comparisons show agreement at a threshold below two."
+      "text": "Stratification by a novel discordance index revealed that 64.9 percent of comparisons show agreement below the two-fold divergence threshold."
     },
     {
       "role": "Boundary",

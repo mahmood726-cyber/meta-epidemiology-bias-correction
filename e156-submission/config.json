@@ -1,0 +1,57 @@
+{
+  "title": "Bias-Correction Methods Reveal Underestimation by Observational Studies",
+  "slug": "meta-epidemiology-bias-correction",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-26",
+  "path": "C:\\Projects\\meta-epidemiology-bias-correction",
+  "type": "meta-epidemiology",
+  "primary_estimand": "Ratio of ratios",
+  "summary": "Seven bias-correction methods reveal 9-13% underestimation by observational studies masked by standard meta-analysis.",
+  "body": "Do standard random-effects meta-analyses mask systematic publication bias in meta-epidemiological comparisons of randomized and observational studies? We assembled 57 ratio-of-ratios comparisons from the IMPACT-HTA database and a BMC Medicine 2022 review, then applied seven methods including REML, Hartung-Knapp, PET-PEESE, trim-and-fill, limit meta-analysis, selection models, and Bayesian MCMC. The standard estimate showed no significant bias, but after correction all convergent methods indicated 9 to 13 percent underestimation by observational studies. The median corrected RR was 0.887, 95% CI 0.764-0.989, with extreme heterogeneity at I-squared 91.2 percent driven entirely by 35 percent discordant comparisons. Selection models failed for all three specifications due to insufficient sample size and sparse p-value intervals in the dataset. Stratification by a novel discordance index revealed that 64.9 percent of comparisons show agreement at a threshold below two. However, a limitation is that the 57-comparison sample restricts statistical power for subgroup-specific bias correction estimates.",
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "Do standard random-effects meta-analyses mask systematic publication bias in meta-epidemiological comparisons of randomized and observational studies?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We assembled 57 ratio-of-ratios comparisons from the IMPACT-HTA database and a BMC Medicine 2022 review, then applied seven methods including REML, Hartung-Knapp, PET-PEESE, trim-and-fill, limit meta-analysis, selection models, and Bayesian MCMC."
+    },
+    {
+      "role": "Method",
+      "text": "The standard estimate showed no significant bias, but after correction all convergent methods indicated 9 to 13 percent underestimation by observational studies."
+    },
+    {
+      "role": "Primary result",
+      "text": "The median corrected RR was 0.887, 95% CI 0.764-0.989, with extreme heterogeneity at I-squared 91.2 percent driven entirely by 35 percent discordant comparisons."
+    },
+    {
+      "role": "Robustness",
+      "text": "Selection models failed for all three specifications due to insufficient sample size and sparse p-value intervals in the dataset."
+    },
+    {
+      "role": "Interpretation",
+      "text": "Stratification by a novel discordance index revealed that 64.9 percent of comparisons show agreement at a threshold below two."
+    },
+    {
+      "role": "Boundary",
+      "text": "However, a limitation is that the 57-comparison sample restricts statistical power for subgroup-specific bias correction estimates."
+    }
+  ],
+  "notes": {
+    "app": "Meta-Epidemiology Bias Correction v1.0",
+    "data": "57 RoR comparisons from IMPACT-HTA and BMC Medicine 2022",
+    "code": "https://github.com/mahmood789/meta-epidemiology-bias-correction",
+    "doi": "",
+    "version": "1.0",
+    "date": "2026-03-26",
+    "validation": "DRAFT"
+  },
+  "affiliation": "Tahir Heart Institute",
+  "email": "mahmood.ahmad2@nhs.net",
+  "references": [
+    "Roever C. Bayesian random-effects meta-analysis using the bayesmeta R package. J Stat Softw. 2020;93(6):1-51.",
+    "Higgins JPT, Thompson SG, Spiegelhalter DJ. A re-evaluation of random-effects meta-analysis. J R Stat Soc Ser A. 2009;172(1):137-159.",
+    "Borenstein M, Hedges LV, Higgins JPT, Rothstein HR. Introduction to Meta-Analysis. 2nd ed. Wiley; 2021."
+  ]
+}

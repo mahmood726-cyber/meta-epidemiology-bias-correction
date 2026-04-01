@@ -1,6 +1,7 @@
 {
   "title": "Bias-Correction Methods Reveal Underestimation by Observational Studies",
   "slug": "meta-epidemiology-bias-correction",
+  "repo_url": "https://github.com/mahmood726-cyber/meta-epidemiology-bias-correction",
   "author": "Mahmood Ahmad",
   "date": "2026-03-26",
   "path": "C:\\Projects\\meta-epidemiology-bias-correction",
@@ -41,7 +42,7 @@
   "notes": {
     "app": "Meta-Epidemiology Bias Correction v1.0",
     "data": "57 RoR comparisons from IMPACT-HTA and BMC Medicine 2022",
-    "code": "https://github.com/mahmood789/meta-epidemiology-bias-correction",
+    "code": "https://github.com/mahmood726-cyber/meta-epidemiology-bias-correction",
     "doi": "",
     "version": "1.0",
     "date": "2026-03-26",

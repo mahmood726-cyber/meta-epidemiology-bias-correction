@@ -4,14 +4,14 @@ author@example.com
 
 Protocol: Bias-Correction Methods Reveal Underestimation by Observational Studies
 
-This protocol describes the planned evidence synthesis for Bias-Correction Methods Reveal Underestimation by Observational Studies, targeting transparent, reproducible estimation of Ratio of ratios in a versioned analytical workflow. Eligible inputs include published studies and validated computational outputs addressing the target estimand, with no restrictions on publication year, language, or clinical domain. Searches will cover PubMed, Embase, and the Cochrane Central Register using structured database strategies, manual reference-list screening, and duplicate full-text review before extraction. The primary analysis will estimate Ratio of ratios using Bayesian random-effects meta-analysis, reporting 95 percent credible intervals with prespecified robustness model checks. Heterogeneity will be summarised using I-squared and tau-squared, with sensitivity analyses across variance estimators, exclusion scenarios, and leave-one-out patterns. Analysis code will be versioned and archived at https://github.com/mahmood789/meta-epidemiology-bias-correction, and reporting will follow PRISMA 2020 guidance to support independent verification and reuse. Anticipated limitations include publication bias, clinical heterogeneity, sparse data in some settings, and the constraints of aggregate-level evidence synthesis.
+This protocol describes the planned evidence synthesis for Bias-Correction Methods Reveal Underestimation by Observational Studies, targeting transparent, reproducible estimation of Ratio of ratios in a versioned analytical workflow. Eligible inputs include published studies and validated computational outputs addressing the target estimand, with no restrictions on publication year, language, or clinical domain. Searches will cover PubMed, Embase, and the Cochrane Central Register using structured database strategies, manual reference-list screening, and duplicate full-text review before extraction. The primary analysis will estimate Ratio of ratios using Bayesian random-effects meta-analysis, reporting 95 percent credible intervals with prespecified robustness model checks. Heterogeneity will be summarised using I-squared and tau-squared, with sensitivity analyses across variance estimators, exclusion scenarios, and leave-one-out patterns. Analysis code will be versioned and archived at https://github.com/mahmood726-cyber/meta-epidemiology-bias-correction, and reporting will follow PRISMA 2020 guidance to support independent verification and reuse. Anticipated limitations include publication bias, clinical heterogeneity, sparse data in some settings, and the constraints of aggregate-level evidence synthesis.
 
 Outside Notes
 
 Type: protocol
 Primary estimand: Ratio of ratios
 App: Meta-Epidemiology Bias Correction v1.0
-Code: https://github.com/mahmood789/meta-epidemiology-bias-correction
+Code: https://github.com/mahmood726-cyber/meta-epidemiology-bias-correction
 Date: 2026-03-26
 Validation: DRAFT
 

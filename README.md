@@ -5,7 +5,7 @@
 
 ## Overview
 
-This repository contains the complete analysis code, data, and manuscript materials for:
+This repository contains the analysis code, data, and manuscript materials for:
 
 **"Advanced Bias-Correction Methods Reveal Underestimation by Observational Studies: A Meta-Epidemiological Comparison"**
 
@@ -151,28 +151,38 @@ install.packages(c("metafor", "dplyr"))
 
 ### Running the Analysis
 
+The analysis scripts read and write data files by their bare names, so set the
+working directory to `data/processed/` before sourcing them (output `.rds`/`.csv`
+files are written there and the canonical copies are kept in `results/`):
+
 ```r
+setwd("data/processed")
+```
+
+```r
+# (paths below are relative to data/processed/)
 # 1. Primary analysis (N=57 real data only)
-source("code/analysis/ANALYSIS_57_REAL_DATA_ONLY.R")
+source("../../code/analysis/ANALYSIS_57_REAL_DATA_ONLY.R")
 
 # 2. Bayesian MCMC analysis
-source("code/analysis/BAYESIAN_MCMC_ANALYSIS.R")
+source("../../code/analysis/BAYESIAN_MCMC_ANALYSIS.R")
 
 # 3. Selection model diagnostics
-source("code/analysis/FIX_SELECTION_MODELS.R")
+source("../../code/analysis/FIX_SELECTION_MODELS.R")
 
 # 4. Editorial revisions and sensitivity analyses
-source("code/analysis/EDITORIAL_REVISIONS_ALL.R")
+source("../../code/analysis/EDITORIAL_REVISIONS_ALL.R")
 
 # 5. Generate all publication figures
-source("code/figures/GENERATE_FIGURES.R")
+source("../../code/figures/GENERATE_FIGURES.R")
 ```
 
 ### Loading Results
 
 ```r
-# Load primary analysis results
+# Load primary analysis results (path relative to repo root)
 results <- readRDS("results/ANALYSIS_57_REAL_ONLY.rds")
+# If your working directory is data/processed, use "../../results/ANALYSIS_57_REAL_ONLY.rds"
 
 # Access standard meta-analysis
 ma <- results$ma_standard
@@ -190,14 +200,14 @@ pred <- results$prediction_interval
 
 ## 📖 Novel Contributions
 
-This study makes **6 novel contributions** to meta-epidemiological methodology:
+This study contributes the following to meta-epidemiological methodology:
 
-1. **First systematic comparison** of bias-correction methods in meta-epidemiology
-2. **First to demonstrate publication bias** in meta-epidemiological comparisons
-3. **Diagnostic framework** for when selection models fail (N<100, high heterogeneity)
+1. **Systematic comparison** of bias-correction methods in meta-epidemiology
+2. **Assessment of publication bias** in meta-epidemiological comparisons
+3. **Diagnostic notes** on when selection models fail (N<100, high heterogeneity)
 4. **Stratified heterogeneity analysis** showing I²=0% vs 98% by concordance status
-5. **Evidence that standard MA masks publication bias** (RoR=1.020 vs 0.867-0.906 after correction)
-6. **Convergence demonstration** across multiple bias-correction approaches
+5. **Evidence that standard MA does not flag the small-study effect** (RoR=1.020 vs 0.867-0.906 after correction)
+6. **Convergence across multiple bias-correction approaches**
 
 ---
 
@@ -251,17 +261,7 @@ Full session info available in analysis scripts.
 
 **Status:** Submitted (November 2025)
 
-**Editorial Assessment:**
-- Overall Score: 49/50 (98%)
-- Decision: Accept with minor revisions
-- Expected publication probability: 98%
-
-**Timeline:**
-- Minor revisions: 1 week
-- Re-review: Not required
-- Expected publication: 2-3 months
-
-See `documentation/FINAL_JOURNAL_EDITORIAL_REVIEW.md` for complete editorial review.
+See `documentation/FINAL_JOURNAL_EDITORIAL_REVIEW.md` for the internal pre-submission review notes.
 
 ---
 
@@ -322,23 +322,9 @@ We acknowledge:
 
 ---
 
-## 📈 Impact
+## ✨ Key Takeaways
 
-**Predicted citations:** 50-100 within 3 years
-
-**Methodological influence:** High - will guide future meta-epidemiological studies
-
-**Clinical impact:** Moderate - context-dependent (extreme heterogeneity)
-
----
-
-## ✨ Highlights
-
-> "This manuscript represents the highest standard of methodological research and will influence future meta-epidemiological studies."
->
-> — Editorial Review, BMC Medical Research Methodology
-
-**Key insight:** Standard meta-analysis (RoR=1.020, p=0.73) masks publication bias that becomes evident with bias-correction methods (median RoR=0.887, 11% underestimation).
+**Key insight:** Standard meta-analysis (RoR=1.020, p=0.73) does not flag the small-study effect that becomes evident with bias-correction methods (median bias-corrected RoR=0.887, 11% underestimation).
 
 **Clinical message:** Agreement between RCTs and observational studies is highly context-dependent. Cannot assume uniformity (prediction interval spans 0.50-2.06).
 

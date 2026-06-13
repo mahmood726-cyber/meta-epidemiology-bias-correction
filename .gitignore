@@ -17,6 +17,12 @@
 !results/*.rds
 !data/processed/*.rds
 
+# Sentinel scan output
+sentinel-findings.md
+sentinel-findings.jsonl
+STUCK_FAILURES.md
+STUCK_FAILURES.jsonl
+
 # OS files
 .DS_Store
 Thumbs.db

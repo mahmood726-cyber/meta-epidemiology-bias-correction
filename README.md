@@ -9,8 +9,6 @@ This repository contains the analysis code, data, and manuscript materials for:
 
 **"Advanced Bias-Correction Methods Reveal Underestimation by Observational Studies: A Meta-Epidemiological Comparison"**
 
-**Status:** Submitted to *BMC Medical Research Methodology* (November 2025)
-
 ### Key Findings
 
 - **Standard meta-analysis masks publication bias** in meta-epidemiological comparisons (RoR=1.020, p=0.73)
@@ -216,12 +214,10 @@ This study contributes the following to meta-epidemiological methodology:
 If you use this code or data, please cite:
 
 ```bibtex
-@article{meta-epi-bias-2025,
+@misc{meta-epi-bias-2025,
   title = {Advanced Bias-Correction Methods Reveal Underestimation by Observational Studies: A Meta-Epidemiological Comparison},
   author = {[Authors]},
-  journal = {BMC Medical Research Methodology},
   year = {2025},
-  status = {Submitted},
   url = {https://github.com/[username]/meta-epidemiology-bias-correction}
 }
 ```
@@ -257,9 +253,7 @@ Full session info available in analysis scripts.
 
 ## 📄 Manuscript Status
 
-**Journal:** BMC Medical Research Methodology
-
-**Status:** Submitted (November 2025)
+**Status:** Manuscript in preparation
 
 See `documentation/FINAL_JOURNAL_EDITORIAL_REVIEW.md` for the internal pre-submission review notes.
 
